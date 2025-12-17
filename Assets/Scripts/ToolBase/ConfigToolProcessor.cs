@@ -16,6 +16,7 @@ public static class ConfigToolProcessor
     {
         ValidateAll(excelDir);
         GenerateAllCS(excelDir, csDir);
+        GenerateAllCSByInterface(excelDir, csDir);
         ExportAllJson(excelDir, jsonDir);
 #if UNITY_EDITOR
         AssetDatabase.Refresh();
@@ -106,7 +107,7 @@ public static class ConfigToolProcessor
             string code = GenerateClassByInterface(className + "Config", fields, types, comments);
             File.WriteAllText(Path.Combine(csDir, className + "Config.cs"), code);
 
-            EventPublisher.Message($"{className}Config.cs 导出完成");
+            EventPublisher.Message($"{className}Config.cs 导出完成(带接口)");
         }
     }
 

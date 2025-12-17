@@ -144,7 +144,7 @@ public class ExcelToolUI : MonoBehaviour
         if (ExcelIsNull(out string[] subFolders)) return;
 
         //创建检测Cs根文件夹
-        string csRootPath = WinPathUtils.Ins.ConfigRootPath("CsFiles");
+        string csRootPath = WinPathUtils.Ins.ConfigRootPath("CsInterFiles");
         WinPathUtils.Ins.CreateRootFolder(csRootPath);
 
         for (int i = 0; i < subFolders.Length; i++)
@@ -158,7 +158,7 @@ public class ExcelToolUI : MonoBehaviour
 
             ConfigToolProcessor.GenerateAllCSByInterface(excelFolderPath, csFolderPath);
         }
-        EventPublisher.Message("所有C# 代码生成完毕\n");
+        EventPublisher.Message("所有C#带接口 代码生成完毕\n");
     }
 
     /// <summary>
@@ -195,6 +195,7 @@ public class ExcelToolUI : MonoBehaviour
 
         CheckExcel();
         ExportCS();
+        ExportCSByInterface();
         ExportJson();
         EventPublisher.Message("所有 配置 校验并 导出完成");
         //ConfigToolProcessor.RunAll(excelFolder, outputCs, outputJson);
