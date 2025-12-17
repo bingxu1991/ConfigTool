@@ -1,0 +1,91 @@
+# Unity 创建的文件
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# 生成的 Visual Studio / Rider 文件
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Unity 元数据（本地缓存）
+*.pidb.meta
+*.pdb.meta
+*.opendb.meta
+*.VC.db.meta
+
+# 可能的 Crash 日志
+CrashReport/
+error.log
+hs_err_pid*
+
+# 构建时生成的文件
+*.apk
+*.aab
+*.ipa
+*.exe
+*.so
+*.app
+*.dmg
+*.iso
+*.manifest
+*.symbols.zip
+
+# macOS / Linux / Windows 生成的临时文件
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*.swn
+
+# Unity Rider 插件
+.idea/
+*.iml
+
+# Unity Cloud Build
+/[Cc]ache/
+[Uu]ploads/
+[Uu]ploads.meta
+
+# Git 管理相关
+*.gitignore.meta
+.git/
+
+# 包管理相关（如果使用 Unity Package Manager）
+Packages/*
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# 如果项目使用 Addressables，忽略 Build 数据
+/Assets/AddressableAssetsData/*/*.bin
+
+# 如果使用 PlayFab、Photon、Mirror 之类的 SDK，可能有不必要的缓存
+PlayFabEditorExtensions/
+PhotonServerSettings.asset
+Mirror/Generated/
+/.vscode
+/ProjectSettings/Packages/com.unity.testtools.codecoverage
+/Assets/MainAssets/Res/Textures/Render/RolePreview.renderTexture
+/Assets/MainAssets/Res/Textures/Render/ClothPreview.renderTexture
+/Assets/MainAssets/Res/Textures/Render/3DPreview.renderTexture
+/Assets/MainAssets/Res/Textures/Render/3DPreview.renderTexture
+/Assets/MainAssets/Models/Textures/Map.renderTexture
+MemoryCaptures/
